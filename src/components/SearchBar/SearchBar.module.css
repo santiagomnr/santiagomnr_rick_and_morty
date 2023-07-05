@@ -1,0 +1,16 @@
+.appSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.imput {
+    border-radius: 15px;
+    position: absolute;
+    width: 30%;
+    height: 6%;
+    padding-left: 1%;
+    font-size: 30px;
+}
