@@ -1,37 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const validation = (data) => {
     const emailRegexp = new RegExp(/\S+@\S+\.\S+/);
     // const passwordRegexp = new RegExp (/^[a-z0-9_-]{6,18$}/)
     let errors = {};
 
-
-
-
-
-
-
-    
     if (!emailRegexp.test(data.email)) {
         errors.email = "Debe ingresar un email valido";
     }

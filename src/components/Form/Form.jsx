@@ -1,5 +1,7 @@
 import { useState } from "react";
 import validation from './validation';
+import style from './Form.module.css';
+import logoRam from '../../assets/logo_Rick_and_Morty.png'
 
 const Form = (props) => {
     const { login } = props;
@@ -27,44 +29,59 @@ const Form = (props) => {
     }
 
     return (
-        <div>
+        <div className={style.container} >
             <form onSubmit={handleSubmit} >
-                <label>Email</label>
-                <input 
-                    type="email" 
-                    placeholder="EJ,pepito@salame.com.xd" 
-                    name="email" 
-                    value={userData.email} 
-                    onChange={handleChange} 
+                <img
+                    src={logoRam}
+                    alt="logo"
+                    className={style.logo}
                 />
-                {
-                    errors.email ? (
-                        <p style={{color:"red"}} >{errors.email}</p>
-                    ) : errors.emailVacio ? (
-                        <p style={{color:"red"}} >{errors.emailVacio} </p>
-                    ) : (
-                        <p style={{color:"red"}} >{errors.caracteres} </p>
-                    )
-                }
 
-                <label>PassWord</label>
-                <input 
-                    type="passWord" 
-                    placeholder="zzz..." 
-                    name="password"  
-                    value={userData.password} 
-                    onChange={handleChange} 
-                />
-                {
-                    errors.password ? (
-                        <p style={{color:"red"}} >{errors.password} </p>
-                    ) : errors.passVacio ? (
-                        <p style={{color:"red"}} >{errors.passVacio} </p>
-                    ) : (
-                        <p style={{color:"red"}} >{errors.caracteres} </p>
-                    )
-                }
-                <button type="submit">Submit</button>
+                <div className={style.formContainer}>
+                    <label className={style.label}>Email</label>
+                    <input
+                        className={style.input}
+                        type="email" 
+                        placeholder="EJ:pepito@correo.xd" 
+                        name="email" 
+                        value={userData.email} 
+                        onChange={handleChange} 
+                        required
+                    />
+                    {
+                        errors.email ? (
+                            <p className={style.error} >{errors.email} </p>
+                        ) : errors.emailVacio ? (
+                            <p className={style.error} >{errors.emailVacio} </p>
+                        ) : (
+                            <p className={style.error} >{errors.caracteres} </p>
+                        )
+                    }
+                </div>
+
+                <div className={style.formContainer}>
+                    <label className={style.label}>PassWord</label>
+                    <input
+                        className={style.input}
+                        type="passWord" 
+                        placeholder="qwerty..." 
+                        name="password"  
+                        value={userData.password} 
+                        onChange={handleChange} 
+                        required
+                    />
+                    {
+                        errors.password ? (
+                            <p className={style.error} >{errors.password} </p>
+                        ) : errors.passVacio ? (
+                            <p className={style.error} >{errors.passVacio} </p>
+                        ) : (
+                            <p className={style.error} >{errors.caracteres} </p>
+                        )
+                    }
+                </div>
+
+                <button type="Submit" className={style.submitButtom}>Submit</button>
             </form>
         </div>
     )

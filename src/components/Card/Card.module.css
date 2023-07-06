@@ -19,7 +19,7 @@
 }
 
 .appBox:hover .appCard {
-    transform: rotateY('angle');
+    transform: rotateY(180deg);
 }
 
 .front, .back {

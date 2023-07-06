@@ -2,10 +2,7 @@
 
 .App {
     text-align: center;
-    background-image: url(./assets/rick-y-morty-fanart-2020_3840x2160_xtrafondos.com.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: #131212;
+    background-color: #33c933;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {

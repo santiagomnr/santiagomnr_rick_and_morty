@@ -1,5 +1,5 @@
 import style from './SearchBar.module.css'
-import imageLogo from '../../assets/Rick_and_Morty.svg.png'
+import imageLogo from '../../assets/logo_Rick_and_Morty.png'
 import { useState } from 'react';
 
 export default function SearchBar(props) {
