@@ -5,13 +5,12 @@
     margin-left: 10%;
 }
 
-.logo {
-    width: 20%;
+.appInput {
+    margin-left: 45px;
 }
 
-.appInput {
-    margin-left: 45;
-}
+/*
+*/
 
 .input {
     border-radius: 15px;
@@ -19,12 +18,11 @@
     width: 30%;
     height: 6%;
     padding-left: 1%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .btn {
     position: relative;
-    /* cursor: pointer; */
     background-color: transparent;
     border: none;
     width: 100%;
@@ -35,7 +33,6 @@
 
 @media (min-width: 400px) and ( max-width: 700px ) {
     .appSearch {
-        flex-direction: column;
         margin-bottom: 15%;
         padding-top: 10%;
     }
@@ -50,6 +47,5 @@
 
     .input {
         width: 70%;
-        margin-right: 10%;
     }
 }

@@ -1,0 +1,25 @@
+.navBar {
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+/*
+background-color: white;
+max-width: 100%;
+overflow: auto;
+*/
+.btn {
+    background-color: hsl(167, 67%, 49%);
+    border: 1px solid #b4cf1a;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #b4cf1a;
+    transform: scale(1.2, 1.2);
+}

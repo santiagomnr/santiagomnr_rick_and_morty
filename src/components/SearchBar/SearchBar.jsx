@@ -1,5 +1,4 @@
 import style from './SearchBar.module.css'
-import imageLogo from '../../assets/logo_Rick_and_Morty.png'
 import { useState } from 'react';
 
 export default function SearchBar(props) {
@@ -17,12 +16,6 @@ export default function SearchBar(props) {
 
     return (
       <div className={style.appSearch}>
-         <img 
-            src={imageLogo} 
-            alt='logo rick and morty' 
-            className={style.logo} 
-         />
-
          <div className={style.appInput}>
             <input
                type='search'
@@ -32,8 +25,7 @@ export default function SearchBar(props) {
                onChange={handleChange}
                value={id}
             />
-            <button onClick={()=> props.onSearch(id)} className={style.btn}>
-            </button>
+            <button onClick={()=> props.onSearch(id)} className={style.btn}></button>
          </div>
       </div>
     )
