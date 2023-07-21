@@ -1,0 +1,5 @@
+npm install
+npm install styled-components
+  (optatiorio si no uso styed components)
+npm install react-router-dom
+npm install redux react-redux redux-thunk
