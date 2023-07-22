@@ -20,11 +20,14 @@ function App() {
    const navigate = useNavigate()
 
    const onSearch = (id) => {
-      axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
-         if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
+      axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({data}) => {
+         const char = characters?.find(e => e.id === Number(data.id))
+         if (char) {
+            alert("Already in the list")
+         } else if(data.id !== undefined) {
+            setCharacters(characters => [...characters, data]);
          } else {
-            window.alert('¡No hay personajes con este ID!');
+            alert("Character not found")
          }
       })
    };

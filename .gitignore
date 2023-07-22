@@ -2,7 +2,8 @@
 
 # dependencies
 /Client/node_modules
-/Client/.pnp
+/Server/node_modules
+/Clientgit /.pnp
 /Client/.pnp.js
 
 # testing
